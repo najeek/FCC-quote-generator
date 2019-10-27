@@ -1,5 +1,54 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+}
+
+#quote-box {
+    width: 35%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+#quote-box #text {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#quote-box #author {
+    text-align: right;
+}
+#tweet-quote {
+    font-size: 1.5rem;
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    border: 0 solid;
+    border-radius: 2px;
+    color: #fff;
+    padding: .5rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #quote-box {
+        width: 80%;
+        padding: 1rem;
+    }
+    #quote-box #text {
+        font-size: 1.5rem;
+    }
+    
+
+
+
+
 }
